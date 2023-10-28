@@ -39,7 +39,7 @@
                         bindings = <
           &mt LGUI F1        &kp F2        &kp F3         &kp F4        &kp F5       &kp F6           &kp F7       &kp F8       &kp F9       &kp F10      &kp F11      &kp F12           
           &mt LCTRL C_MUTE   &kp C_VOL_DN  &kp C_VOL_UP   &kp PG_DN     &kp PG_UP    &kp HOME         &kp END      &kp LEFT     &kp UP       &kp DOWN     &kp RIGHT    &kp PSCRN
-          &mt LCTRL TILDE    &kp EXCL      &kp AT         &kp HASH      &kp DLLR     &kp PRCNT        &kp CARET    &kp AMPS     &kp STAR     &kp LPAR     &kp RPAR     &kp PIPE
+          &mt LCTRL PIPE     &kp EXCL      &kp AT         &kp HASH      &kp DLLR     &kp PRCNT        &kp CARET    &kp AMPS     &kp STAR     &kp LPAR     &kp RPAR     &kp PIPE
                                                           &lt ADJ TAB   &trans       &kp DEL          &trans       &trans       &lt ADJ DEL
                         >;
                 };
