@@ -27,20 +27,35 @@
 / {
     combos {
         compatible = "zmk,combos";
-        combo_esc {
+        combo_ESC {
             timeout-ms = <50>;
             key-positions = <1 2>;
             bindings = <&kp ESC>;
         };
-        combo_grave {
+        combo_GRAVE {
             timeout-ms = <50>;
             key-positions = <2 3>;
             bindings = <&kp GRAVE>;
         };                
-        combo_tab {
+        combo_TAB {
             timeout-ms = <50>;
             key-positions = <3 4>;
             bindings = <&kp TAB>;
+        };
+        combo_LALT {
+            timeout-ms = <50>;
+            key-positions = <13 14>;
+            bindings = <&kp LALT>;
+                };
+        combo_LGUI {
+            timeout-ms = <50>;
+            key-positions = <14 15>;
+            bindings = <&kp LCTRL>;
+        };
+        combo_LCTRL {
+            timeout-ms = <50>;
+            key-positions = <15 16>;
+            bindings = <&kp LCTRL>;
         };
     };
 };
@@ -54,8 +69,8 @@
                         bindings = <
           &tog RSE          &kp Q       &kp W       &kp E          &kp R            &kp T            &kp Y           &kp U           &kp I          &kp O      &kp P       &lt RSE LBKT       
           &kp LSHFT         &lt RSE A   &lt LWR S   &lt LWR D      &lt RSE F        &kp G            &kp H           &lt RSE J       &lt LWR K      &kp L      &kp SEMI    &mt RSHFT SQT
-          &mt LSHFT GRAVE   &kp Z       &kp X       &kp C          &kp V            &kp B            &kp N           &kp M           &kp COMMA      &kp DOT    &kp FSLH    &mt RALT RET
-                                                    &mt LCTRL DEL  &mt LALT SPACE   &lt LWR BSPC     &lt RSE SPACE   &lt LWR BSPC    &mt RCTRL DEL 
+          &kp LGUI          &kp Z       &kp X       &kp C          &kp V            &kp B            &kp N           &kp M           &kp COMMA      &kp DOT    &kp FSLH    &mt RALT RET
+                                                    &mt LCTRL DEL  &mt LALT SPACE   &lt LWR BSPC     &lt RSE SPACE   &lt LWR DEL    &mt RCTRL DEL 
                         >;
                 };
                 lower_layer {
