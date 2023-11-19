@@ -61,7 +61,7 @@
             timeout-ms = <25>;
             key-positions = <14 15>;  //sd;
             bindings = <&kp LCTRL>;
-        };`
+        };
         combo_RCTRL {
             timeout-ms = <25>;
             key-positions = <19 20>;  //jk;
