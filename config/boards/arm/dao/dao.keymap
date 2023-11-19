@@ -72,7 +72,6 @@
             key-positions = <20 21>;  
             bindings = <&kp RALT>;    
         };
-
     };
 };
 
@@ -97,7 +96,6 @@
                                                           &lt ADJ TAB   &trans       &kp DEL          &kp DEL      &trans       &lt ADJ DEL
                         >;
                 };
-
                 raise_layer {
                         bindings = <
           &tog RSE           &kp F2        &kp F3          &kp F4        &kp F5      &kp F6            &kp EQUAL       &kp N7     &kp N8    &kp N9      &kp N0           &kp KP_SLASH   
