@@ -13,8 +13,8 @@
 #define RSE 2
 #define ADJ 3
 
-&lt { quick_tap_ms = <400>; };
-&mt { quick_tap_ms = <400>; };
+&lt { quick_tap_ms = <200>; };
+&mt { quick_tap_ms = <200>; };
 
 / {
     chosen {
@@ -28,40 +28,56 @@
     combos {
         compatible = "zmk,combos";
         combo_GRAVE {
-            timeout-ms = <50>;
-            key-positions = <1 2>;
+            timeout-ms = <25>;
+            key-positions = <1 2>;  //qw
             bindings = <&kp GRAVE>;
         };
         combo_ESC {
-            timeout-ms = <50>;
-            key-positions = <2 3>;
+            timeout-ms = <25>;
+            key-positions = <2 3>;  //we
             bindings = <&kp ESC>;
         };                
         combo_TAB {
-            timeout-ms = <50>;
-            key-positions = <3 4>;
+            timeout-ms = <25>;
+            key-positions = <3 4>;  //er
+            bindings = <&kp TAB>;
+        };
+        combo_TAB {
+            timeout-ms = <25>;
+            key-positions = <31 32;  //mcomma
             bindings = <&kp TAB>;
         };
         combo_LALT {
-            timeout-ms = <50>;
-            key-positions = <13 14>;
+            timeout-ms = <25>;
+            key-positions = <13 14>;  //as
             bindings = <&kp LALT>;
-                };
-        combo_LCTRL {
-            timeout-ms = <50>;
-            key-positions = <14 15>;
-            bindings = <&kp LCTRL>;
         };
+        combo_LALT {
+            timeout-ms = <25>;
+            key-positions = <27 28>;  //cv
+            bindings = <&kp LALT>;   
+        };   
+        combo_LCTRL {
+            timeout-ms = <25>;
+            key-positions = <14 15>;  //sd
+            bindings = <&kp LCTRL>;
+        };`
         combo_RCTRL {
-            timeout-ms = <50>;
-            key-positions = <19 20>;
+            timeout-ms = <25>;
+            key-positions = <19 20>;  //jk
             bindings = <&kp RCTRL>;
         };            
         combo_RALT {
-            timeout-ms = <50>;
-            key-positions = <20 21>;
+            timeout-ms = <25>;
+            key-positions = <20 21>;  //kl
             bindings = <&kp RALT>;    
         };
+        combo_RALT {
+            timeout-ms = <25>;
+            key-positions = <20 21>;
+            bindings = <&kp RALT>;  //  
+        };
+
     };
 };
 
@@ -75,7 +91,7 @@
           &tog RSE          &kp Q       &kp W       &kp E          &kp R            &kp T            &kp Y           &kp U           &kp I          &kp O      &kp P       &lt RSE LBKT       
           &kp LSHFT         &lt RSE A   &lt LWR S   &kp D          &lt LWR F        &kp G            &kp H           &lt LWR J       &kp K          &kp L      &kp SEMI    &mt RSHFT SQT
           &kp LSHFT         &kp Z       &kp X       &kp C          &kp V            &kp B            &kp N           &kp M           &kp COMMA      &kp DOT    &kp FSLH    &mt RALT RET
-                                                    &mt LCTRL DEL  &mt LALT SPACE   &mt DEL BSPC     &lt RSE SPACE   &lt LWR DEL     &mt RCTRL DEL 
+                                                    &mt LGUI DEL   &mt LALT SPACE   &mt DEL BSPC     &lt RSE SPACE   &lt LWR DEL     &mt RGUI DEL 
                         >;
                 };
                 lower_layer {
