@@ -72,11 +72,6 @@
             key-positions = <20 21>;  
             bindings = <&kp RALT>;    
         };
-        combo_RALT {
-            timeout-ms = <25>;
-            key-positions = <20 21>;
-            bindings = <&kp RALT>;  
-        };
 
     };
 };
