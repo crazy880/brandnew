@@ -44,7 +44,7 @@
         };
         combo_TAB {
             timeout-ms = <25>;
-            key-positions = <31 32; 
+            key-positions = <31 32>; 
             bindings = <&kp TAB>;
         };
         combo_LALT {
