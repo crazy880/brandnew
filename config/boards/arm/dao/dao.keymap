@@ -29,53 +29,53 @@
         compatible = "zmk,combos";
         combo_GRAVE {
             timeout-ms = <25>;
-            key-positions = <1 2>;  //qw;
+            key-positions = <1 2>;
             bindings = <&kp GRAVE>;
         };
         combo_ESC {
             timeout-ms = <25>;
-            key-positions = <2 3>;  //we;
+            key-positions = <2 3>; 
             bindings = <&kp ESC>;
         };                
         combo_TAB {
             timeout-ms = <25>;
-            key-positions = <3 4>;  //er;
+            key-positions = <3 4>; 
             bindings = <&kp TAB>;
         };
         combo_TAB {
             timeout-ms = <25>;
-            key-positions = <31 32;  //mcomma;
+            key-positions = <31 32; 
             bindings = <&kp TAB>;
         };
         combo_LALT {
             timeout-ms = <25>;
-            key-positions = <13 14>;  //as;
+            key-positions = <13 14>; 
             bindings = <&kp LALT>;
         };
         combo_LALT {
             timeout-ms = <25>;
-            key-positions = <27 28>;  //cv;
+            key-positions = <27 28>; 
             bindings = <&kp LALT>;   
         };   
         combo_LCTRL {
             timeout-ms = <25>;
-            key-positions = <14 15>;  //sd;
+            key-positions = <14 15>; 
             bindings = <&kp LCTRL>;
         };
         combo_RCTRL {
             timeout-ms = <25>;
-            key-positions = <19 20>;  //jk;
+            key-positions = <19 20>; 
             bindings = <&kp RCTRL>;
         };            
         combo_RALT {
             timeout-ms = <25>;
-            key-positions = <20 21>;  //kl;
+            key-positions = <20 21>;  
             bindings = <&kp RALT>;    
         };
         combo_RALT {
             timeout-ms = <25>;
             key-positions = <20 21>;
-            bindings = <&kp RALT>;  //;
+            bindings = <&kp RALT>;  
         };
 
     };
