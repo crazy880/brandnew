@@ -23,37 +23,47 @@
     };
 };
 
-
 / {
      keymap {
         compatible = "zmk,keymap";
 
         default_layer {
+               
                 bindings = <
+
         &tog RSE          &kp Q       &kp W       &kp E          &kp R            &kp T            &kp Y           &kp U           &kp I          &kp O      &kp P       &lt RSE LBKT       
         &kp LSHFT         &lt RSE A   &lt LWR S   &kp D          &lt LWR F        &kp G            &kp H           &lt LWR J       &kp K          &kp L      &kp SEMI    &mt RSHFT SQT
         &kp LSHFT         &kp Z       &kp X       &kp C          &kp V            &kp B            &kp N           &kp M           &kp COMMA      &kp DOT    &kp FSLH    &mt RALT RET
-                                                  &mt LGUI DEL   &mt LALT SPACE   &mt DEL BSPC     &lt RSE SPACE   &lt LWR DEL     &mt RGUI DEL 
+                                                  &mt LCTRL DEL   &mt LALT SPACE   &mt LSHFT BSPC     &lt RSE SPACE   &lt LWR DEL     &mt RCTRL DEL 
                         >;
                 };
+
        lower_layer {
+               
                 bindings = <
+
         &kp F1        &kp F2        &kp F3         &kp F4        &kp F5       &kp F6           &kp F7       &kp F8       &kp F9       &kp F10      &kp F11      &kp F12           
         &kp C_MUTE    &kp C_VOL_DN  &kp C_VOL_UP   &kp PG_DN     &kp PG_UP    &kp HOME         &kp END      &kp LEFT     &kp UP       &kp DOWN     &kp RIGHT    &kp PSCRN
         &kp TILDE     &kp EXCL      &kp AT         &kp HASH      &kp DLLR     &kp PRCNT        &kp CARET    &kp AMPS     &kp STAR     &kp LPAR     &kp RPAR     &kp PIPE
                                                    &lt ADJ DEL   &trans       &kp DEL          &kp DEL      &trans       &lt ADJ DEL
                         >;
                 };
+
         raise_layer {
+               
                 bindings = <
+
         &tog RSE       &kp F2        &kp F3          &kp F4        &kp F5      &kp F6            &kp EQUAL       &kp N7     &kp N8    &kp N9      &kp N0           &kp KP_SLASH   
         &kp  F7        &kp F8        &kp F9          &kp F10       &kp F11     &kp F12           &kp KP_MINUS    &kp N4     &kp N5    &kp N6      &kp KP_DOT       &kp KP_MULTIPLY
         &kp  F1        &kp KP_N0     &kp KP_N1       &kp KP_N2     &kp KP_N3   &kp KP_DOT        &kp KP_PLUS     &kp N1     &kp N2    &kp N3      &kp KP_DOT       &trans
                                                      &trans        &trans      &lt ADJ A         &lt ADJ A       &kp N0     &kp N0
                         >;
                 };
+
         adjust_layer {
+               
                 bindings = <
+
         &bootloader   &none          &none          &none          &none          &none             &none          &none          &none          &none          &none          &bootloader
         &bt BT_CLR    &bt BT_SEL 0   &bt BT_SEL 1   &bt BT_SEL 2   &bt BT_SEL 3   &bt BT_SEL 4      &bt BT_SEL 4   &bt BT_SEL 3   &bt BT_SEL 2   &bt BT_SEL 1   &bt BT_SEL 0   &bt BT_CLR
         &sys_reset    &none          &none          &none          &none          &none             &none          &none          &none          &none          &none          &sys_reset
