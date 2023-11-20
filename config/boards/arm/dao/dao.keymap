@@ -20,7 +20,7 @@
 / {
     chosen {
         zmk,matrix_transform = &default_transform;
-        // zmk,matrix_transform = &extra_keys_transform;
+        zmk,matrix_transform = &extra_keys_transform;
     };
 };
 
@@ -47,7 +47,7 @@
             timeout-ms = <50>;
             key-positions = <13 14>;
             bindings = <&kp LALT>;
-                };
+        };
         combo_LCTRL {
             timeout-ms = <50>;
             key-positions = <14 15>;
